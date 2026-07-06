@@ -1,0 +1,1 @@
+这里是 LeonOS 4 的 bug 汇报中心，所有 LeonOS 4 项目的 bug 都要在这里提交。
