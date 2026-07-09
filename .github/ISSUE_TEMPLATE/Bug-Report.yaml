@@ -1,5 +1,10 @@
 name: Bug 反馈
 description: 提交一个可复现的问题反馈。
+title: '[BUG]'
+labels:
+- bug
+assignees:
+- Leonmmcoset
 body:
 - type: input
   id: version
@@ -7,6 +12,23 @@ body:
     label: NTCLKS版本号
     description: 操作系统的NTCLKS内核版本号（可通过0:/userland/osver.elf应用程序查看）
     placeholder: 1.0.0-9999
+  validations:
+    required: true
+- type: dropdown
+  id: area
+  attributes:
+    label: 机器类型
+    description: 请选择操作系统运行所在的机器
+    options:
+    - VMware
+    - VirtualBox
+    - QEMU
+    - Bochs
+    - UTM（无JIT版）
+    - UTM（有JIT版）
+    - WASM
+    - 真机
+    - 其他
   validations:
     required: true
 - type: textarea
@@ -59,8 +81,3 @@ body:
       required: true
   validations:
     required: true
-title: '[BUG]'
-labels:
-- bug
-assignees:
-- Leonmmcoset
