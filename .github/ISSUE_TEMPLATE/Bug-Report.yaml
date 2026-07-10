@@ -29,6 +29,7 @@ body:
     - WASM
     - 真机
     - 其他
+    - 所有机器（已确认此bug在所有机器都会出现）
   validations:
     required: true
 - type: textarea
