@@ -10,7 +10,7 @@ body:
   id: version
   attributes:
     label: NTCLKS版本号
-    description: 操作系统的NTCLKS内核版本号（可通过0:/userland/osver.elf应用程序查看）
+    description: 操作系统的NTCLKS内核版本号（可通过0:/system/apps/osver/osver.elf应用程序查看）
     placeholder: 1.0.0-9999
   validations:
     required: true
